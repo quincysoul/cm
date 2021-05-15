@@ -10,4 +10,4 @@
 -n `number of plots`. (101.4GB * $num_queues)/$destination_free_space = max num plots to run in that queue.
 #>
 cd "$($chia_location)\$($chia_version)\resources\app.asar.unpacked\daemon\"
-start-process ./chia.exe -NoNewWindow -argumentlist "plots create -k 32 -b 3400 -u 128 -r 2 -t X:\temp -d I:\chia_plots -n 80"
+start-process $chia_path -NoNewWindow -argumentlist "plots create -k 32 -b 3400 -u 128 -r 2 -t X:\temp -d H:\chia_plots -n 100"

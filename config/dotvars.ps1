@@ -2,6 +2,10 @@
 $chia_location="C:\Users\shawn\AppData\Local\Chia-Blockchain"
 # Set to currently installed chia version.
 $chia_version="app-1.1.2"
+
+#override
+$chia_path = Resolve-Path "$Env:USERPROFILE\AppData\Local\chia-blockchain\*\resources\app.asar.unpacked\daemon\chia.exe"
+
 # Set to nvme 1
 $nvme_1_temp="X:\temp"
 $nvme_2_temp="Y:\temp"

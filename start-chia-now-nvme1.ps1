@@ -13,4 +13,4 @@ cd "$($chia_location)\$($chia_version)\resources\app.asar.unpacked\daemon\"
 $random_stagger = Get-Random -Minimum $stagger_min_seconds -Maximum $stagger_max_seconds
 Write-Host "Waiting $($random_stagger) seconds to start execution"
 Start-Sleep -Seconds $random_stagger
-start-process ./chia.exe -NoNewWindow -argumentlist "plots create -k 32 -b 3000 -u 128 -r 2 -t X:\temp -d I:\chia_plots -n 80"
+start-process $chia_path -NoNewWindow -argumentlist "plots create -k 32 -b 3000 -u 128 -r 2 -t X:\temp -d H:\chia_plots -n 100"
